@@ -26,3 +26,11 @@ def reduce(reduce_fn, list, initial = 1):
     return reducer
 
 print(reduce(reduce_fn, [1, 2, 3], 1))
+
+
+def division_of(n):
+    division_n = lambda x: n % x == 0
+    return [1] + keep_if(division_n, range(2, n))
+
+
+print(division_of(6))

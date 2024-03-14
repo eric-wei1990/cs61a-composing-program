@@ -1,4 +1,5 @@
 def width(area, height):
+    assert area % height == 0
     return area // height
 
 def perimeter(width, height):
@@ -14,4 +15,4 @@ def min_perimeter(area):
     
     return min(perimeters)
 
-print(min_perimeter(1))
+print(min_perimeter(10))
